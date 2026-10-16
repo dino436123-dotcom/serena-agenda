@@ -1,4 +1,4 @@
-const CACHE='serena-shell-v4';
+const CACHE='serena-shell-v5';
 const ASSETS=['./','./index.html','./styles.css','./app.js','./config.js','./manifest.json','./icon.svg'];
 
 self.addEventListener('install',event=>{

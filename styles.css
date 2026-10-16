@@ -11,13 +11,13 @@
   --mist:#f1f1f1;
   --ground:#f7f7f7;
   --paper:#fff;
-  --display:"Instrument Serif","Iowan Old Style","Times New Roman",serif;
-  --ui:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --display:"Inter Tight","Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --ui:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
 }
 
 *{box-sizing:border-box}
 [hidden]{display:none!important}
-body{margin:0;background:var(--ground);color:var(--ink);font:14px/1.45 var(--ui);font-synthesis:none;-webkit-font-smoothing:antialiased}
+body{font-variant-numeric:tabular-nums;margin:0;background:var(--ground);color:var(--ink);font:14px/1.45 var(--ui);font-synthesis:none;-webkit-font-smoothing:antialiased}
 button,input,select,textarea{font:inherit;color:inherit}
 button{cursor:pointer}
 :focus-visible{outline:2px solid var(--black);outline-offset:2px}
@@ -28,7 +28,7 @@ button{cursor:pointer}
 .brand{display:flex;gap:11px;align-items:center;text-decoration:none;color:var(--ink);padding:0 10px}
 .brand-mark{display:grid;place-items:center;flex:none;width:40px;height:40px;border-radius:12px;background:var(--black);color:var(--white)}
 .brand-mark svg{width:26px;height:26px}
-.brand strong{display:block;font:400 29px/1 var(--display);letter-spacing:-.01em}
+.brand strong{display:block;font:600 29px/1 var(--display);letter-spacing:-.01em}
 .brand small{display:block;margin-top:3px;color:var(--muted);font-size:11px}
 .sidebar-date{margin:36px 10px 14px;color:var(--muted);font-size:12px}
 .nav{display:grid;gap:4px}
@@ -56,7 +56,7 @@ button{cursor:pointer}
 .eyebrow{display:block;font-size:12px;letter-spacing:.2px;color:var(--muted);font-weight:600;text-transform:lowercase}
 .eyebrow::first-letter{text-transform:uppercase}
 .page-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:28px}
-.page-heading h1{font:400 clamp(36px,3.6vw,50px)/1.02 var(--display);letter-spacing:-.02em;margin:8px 0 6px}
+.page-heading h1{font:600 clamp(36px,3.6vw,50px)/1.02 var(--display);letter-spacing:-.03em;margin:8px 0 6px}
 .page-heading p{color:var(--muted);margin:0;font-size:13px}
 
 /* ---------- Botões ---------- */
@@ -72,7 +72,7 @@ button{cursor:pointer}
 .grid-main{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(260px,.85fr);gap:20px}
 .panel{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:22px;min-width:0}
 .panel-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:17px}
-.panel h2,.panel-head h2{font:400 26px/1.1 var(--display);letter-spacing:-.01em;margin:0}
+.panel h2,.panel-head h2{font:600 26px/1.1 var(--display);letter-spacing:-.01em;margin:0}
 .panel-subtitle{color:var(--muted);font-size:11px;margin-top:5px}
 .date-pill{background:var(--mist);color:var(--ink);border-radius:999px;padding:7px 12px;font-size:11px}
 
@@ -136,7 +136,7 @@ button{cursor:pointer}
 /* ---------- Calendário ---------- */
 .calendar-panel{padding:22px}
 .calendar-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
-.calendar-top h2{font:400 30px/1.05 var(--display);letter-spacing:-.01em;margin:0}
+.calendar-top h2{font:600 30px/1.05 var(--display);letter-spacing:-.01em;margin:0}
 .calendar-top h2::first-letter,.selected-date-list h3::first-letter{text-transform:uppercase}
 .calendar-controls{display:flex;align-items:center;gap:8px}
 .circle-btn{border:1px solid var(--line);background:var(--white);width:31px;height:31px;border-radius:50%;color:var(--ink)}
@@ -155,7 +155,7 @@ button{cursor:pointer}
 .day-cell.today .day-dot{background:var(--white)}
 .day-cell.today .day-dot.task{background:#b0b0b0}
 .selected-date-list{margin-top:20px;border-top:1px solid var(--line);padding-top:18px}
-.selected-date-list h3{font:400 24px/1.1 var(--display);margin:0 0 12px}
+.selected-date-list h3{font:600 24px/1.1 var(--display);margin:0 0 12px}
 .two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 
 .filters{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:18px}
@@ -175,7 +175,7 @@ button{cursor:pointer}
 .metric-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin-bottom:20px}
 .metric-card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px}
 .metric-label{font-size:11px;color:var(--muted)}
-.metric-number{font:400 44px/1 var(--display);margin:10px 0 6px;letter-spacing:-.02em}
+.metric-number{font:600 44px/1 var(--display);margin:10px 0 6px;letter-spacing:-.03em}
 .metric-note{font-size:10px;color:var(--muted)}
 .bar-chart{height:150px;display:flex;align-items:flex-end;justify-content:space-around;gap:10px;padding:15px 8px 0;border-bottom:1px solid var(--line)}
 .bar-group{display:flex;flex-direction:column;align-items:center;gap:8px;flex:1;height:100%;justify-content:flex-end}
@@ -198,7 +198,7 @@ button{cursor:pointer}
 .modal::backdrop{background:rgba(0,0,0,.5);backdrop-filter:blur(3px)}
 .modal form{padding:25px}
 .modal-head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:22px}
-.modal-head h2{font:400 32px/1.05 var(--display);letter-spacing:-.01em;margin:6px 0 0}
+.modal-head h2{font:600 32px/1.05 var(--display);letter-spacing:-.01em;margin:6px 0 0}
 .close-button{border:0;background:var(--mist);border-radius:50%;width:31px;height:31px;font-size:20px;color:var(--text-2)}
 .close-button:hover{background:#e3e3e3}
 .modal label{display:block;font-size:11px;color:var(--text-2);margin-bottom:14px}
@@ -231,9 +231,9 @@ button{cursor:pointer}
 
 .auth-aside{position:relative;display:flex;flex-direction:column;gap:clamp(24px,5vh,56px);min-height:100%;padding:clamp(28px,4.5vw,64px);background:var(--black);color:var(--white)}
 .auth-aside :focus-visible{outline-color:var(--white)}
-.auth-brand{display:flex;align-items:center;gap:12px;font:400 32px/1 var(--display);letter-spacing:-.01em}
+.auth-brand{display:flex;align-items:center;gap:12px;font:600 32px/1 var(--display);letter-spacing:-.01em}
 .auth-brand .brand-mark{background:var(--white);color:var(--black)}
-.auth-headline{margin:0;max-width:11ch;font:400 clamp(48px,6.4vw,96px)/.95 var(--display);letter-spacing:-.025em}
+.auth-headline{margin:0;max-width:11ch;font:600 clamp(48px,6.4vw,96px)/.95 var(--display);letter-spacing:-.035em}
 .auth-cal{margin-top:auto;max-width:520px}
 .auth-cal-title{font-size:13px;color:var(--faint);margin-bottom:12px}
 .auth-cal-title::first-letter{text-transform:uppercase}
@@ -257,7 +257,7 @@ button{cursor:pointer}
 .auth-tabs button{border:0;background:transparent;border-radius:9px;padding:11px 12px;font-size:13px;font-weight:600;color:var(--muted)}
 .auth-tabs button:not([aria-selected="true"]):hover{color:var(--ink)}
 .auth-tabs button[aria-selected="true"]{background:var(--black);color:var(--white)}
-.auth-title{margin:0 0 10px;font:400 clamp(40px,4vw,50px)/1.02 var(--display);letter-spacing:-.02em}
+.auth-title{margin:0 0 10px;font:600 clamp(40px,4vw,50px)/1.02 var(--display);letter-spacing:-.03em}
 .auth-lead{margin:0 0 28px;max-width:42ch;color:var(--muted);font-size:14px;line-height:1.6}
 
 .field{display:block;margin-bottom:18px}
@@ -282,10 +282,10 @@ button{cursor:pointer}
 .auth-status:not(:empty){margin-top:18px;padding:12px 14px;background:var(--mist);border-left:3px solid var(--black);border-radius:0 8px 8px 0}
 
 .space-option{padding:24px 0;border-top:1px solid var(--line)}
-.space-option h2{margin:0 0 6px;font:400 28px/1.1 var(--display);letter-spacing:-.01em}
+.space-option h2{margin:0 0 6px;font:600 28px/1.1 var(--display);letter-spacing:-.01em}
 .space-option p{margin:0 0 16px;color:var(--muted);line-height:1.55}
 .space-option .field{margin-bottom:12px}
-.invite-code{margin:4px 0 20px;padding:28px 14px;border:1px solid var(--black);border-radius:12px;text-align:center;font:400 clamp(26px,5vw,38px)/1.1 var(--display);letter-spacing:.12em;overflow-wrap:anywhere;user-select:all}
+.invite-code{margin:4px 0 20px;padding:28px 14px;border:1px solid var(--black);border-radius:12px;text-align:center;font:500 clamp(26px,5vw,38px)/1.1 var(--display);letter-spacing:.12em;overflow-wrap:anywhere;user-select:all}
 .invite-actions{display:grid;gap:10px}
 
 @media (prefers-reduced-motion:reduce){
@@ -319,7 +319,7 @@ button{cursor:pointer}
   .mobile-brand{display:flex;align-items:center;gap:8px}
   .mobile-brand .brand-mark{width:30px;height:30px;border-radius:9px}
   .mobile-brand .brand-mark svg{width:20px;height:20px}
-  .mobile-brand strong{font:400 24px/1 var(--display)}
+  .mobile-brand strong{font:600 24px/1 var(--display)}
   .topbar-note{display:none}
   .icon-button{width:33px;height:33px}
   .view-root{padding:18px 16px 30px}
